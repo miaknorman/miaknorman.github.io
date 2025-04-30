@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search (Google Advanced)</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <h1>Advanced Google Search: Recipe Finder</h1>
+  <form action="https://www.google.com/search" method="GET">
+
+    <label for="q">Search for recipes:</label>
+    <input type="text" name="q" id="q" placeholder="e.g. pasta carbonara">
+    <br><br>
+
+    <label for="filetype">Preferred file type:</label>
+    <select name="as_filetype" id="filetype">
+      <option value="">Any</option>
+      <option value="pdf">PDF</option>
+      <option value="doc">DOC</option>
+      <option value="ppt">PPT</option>
+    </select>
+    <br><br>
+
+    <fieldset>
+      <legend>Include these terms:</legend>
+      <input type="checkbox" name="as_epq" value="gluten-free" id="gluten">
+      <label for="gluten">Gluten-Free</label><br>
+
+      <input type="checkbox" name="as_epq" value="vegetarian" id="veggie">
+      <label for="veggie">Vegetarian</label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Search only in titles?</legend>
+      <input type="radio" name="as_occt" value="title" id="yes">
+      <label for="yes">Yes</label><br>
+
+      <input type="radio" name="as_occt" value="any" id="no" checked>
+      <label for="no">No</label>
+    </fieldset>
+    <br>
+
+    <button type="submit">Search Google</button>
+  </form>
+</body>
+</html>
