@@ -2,7 +2,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f2f2f2;
   color: #333;
-  margin: 20px;
+  padding: 5vw;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -10,13 +11,14 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 6vw;
   color: #004488;
 }
 
 h2 {
+  font-size: 4vw;
   color: #006699;
-  margin-top: 30px;
+  margin-top: 5vh;
 }
 
 p {
@@ -25,13 +27,15 @@ p {
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 5vw;
   list-style-type: square;
 }
 
 img {
-  width: 300px;
+  max-width: 100%;
+  height: auto;
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 10px;
 }
+
