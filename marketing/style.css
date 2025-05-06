@@ -91,3 +91,32 @@ footer {
     font-size: 1rem;
   }
 }
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.homepage-image {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive stacking on small screens */
+@media screen and (max-width: 740px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .homepage-image {
+    margin-bottom: 1rem;
+  }
+}
+
