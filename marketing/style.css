@@ -36,33 +36,6 @@ main {
   padding: 1.5rem;
 }
 
-/* General Heading Style */
-h2 {
-  font-family: 'Playfair Display', serif;
-  color: #b45f06;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Paragraphs in Main */
-main p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* About Page Image */
-.about-image {
-  max-width: 100%;
-  height: auto;
-  margin: 2rem auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 /* Footer */
 footer {
   background-color: #8a4f3d;
@@ -70,6 +43,62 @@ footer {
   text-align: center;
   padding: 0.75rem;
   margin-top: 2rem;
+}
+
+/* Headings */
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b45f06;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Image Row Styling */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.homepage-image {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Visit Button */
+.button-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.visit-button {
+  background-color: #b45f06;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: #944b04;
 }
 
 /* Responsive Layout */
@@ -90,27 +119,7 @@ footer {
   main p {
     font-size: 1rem;
   }
-}
-.image-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
 
-.homepage-image {
-  width: 100%;
-  height: auto;
-  flex: 1;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive stacking on small screens */
-@media screen and (max-width: 740px) {
   .image-row {
     flex-direction: column;
   }
