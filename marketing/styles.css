@@ -1,8 +1,13 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap');
+
+/* Base Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   background-color: #f8f3ef;
   color: #3b3a30;
+  line-height: 1.6;
 }
 
 header {
@@ -12,6 +17,10 @@ header {
   text-align: center;
 }
 
+nav {
+  margin-top: 0.5rem;
+}
+
 nav a {
   color: white;
   margin: 0 10px;
@@ -19,13 +28,65 @@ nav a {
   font-weight: bold;
 }
 
-main {
-  padding: 1rem;
+nav a:hover {
+  text-decoration: underline;
 }
 
+main {
+  padding: 1.5rem;
+}
+
+/* Footer */
 footer {
   background-color: #8a4f3d;
   color: white;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* About Page Enhancements */
+.about-page {
+  background-color: #fff8f2;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.about-header {
+  font-family: 'Playfair Display', serif;
+  color: #b45f06;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive Layout: Galaxy S8+ Compatibility */
+@media screen and (max-width: 740px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main, .about-page {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .about-header {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
 }
