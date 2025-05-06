@@ -70,6 +70,15 @@ footer {
   margin: 0 auto;
 }
 
+/* About Page Image */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Responsive Layout: Galaxy S8+ Compatibility */
 @media screen and (max-width: 740px) {
   nav a {
